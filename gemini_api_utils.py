@@ -12,7 +12,7 @@ except ImportError:
 from ui_utils import exibir_cabecalho, obter_input_usuario, exibir_status
 
 # --- Variáveis Globais de Configuração da IA ---
-GEMINI_API_KEY = None
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_MODEL_NAME_GERACAO = None
 GEMINI_MODEL_NAME_FINALIZACAO = None
 GENERATIVE_MODEL_INSTANCE_GERACAO = None
